@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+  <meta charset="UTF-8">
+  <title>Iñaki Larraz – Cafetería Garci</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css?v=1">
+  <link rel="stylesheet" href="css/layout.css?v=1">
+  <link rel="stylesheet" href="css/components.css?v=105">
+  <link rel="stylesheet" href="css/responsive.css?v=1">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="manifest" href="manifest.json">
+
+  
+  <script src="js/main.js" defer></script>
+
+  <meta name="description" content="Garci – Café de especialidad, tapas de autor y el ambiente perfecto para quedarse en el barrio.">
+  <meta property="og:title" content="Garci – Un bar para quedarse">
+  <meta property="og:description" content="Vení a disfrutar de nuestro café y nuestras noches de encuentro.">
+  <meta property="og:image" content="https://tuweb.com/assets/img/hero.jpeg"> 
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#1A1F2B">
+  
+</head> ```
+
+<body>
+
+  <div class="reserva-overlay" id="reservaOverlay">
+    <div class="reserva-modal">
+      <h3 class="reserva-modal-title">Gracias ✨</h3>
+      <p class="reserva-modal-text">
+        Estamos preparando tu solicitud.<br>
+        En unos segundos te llevamos a WhatsApp...
+      </p>
+    </div>
+  </div>
+
+  <header class="header-ui">
+    <div class="logo-ui">
+      <a href="#inicio">Garci</a>
+    </div>
+
+    <button
+      class="burger"
+      id="burger"
+      aria-label="Abrir menú"
+      aria-expanded="false"
+      aria-controls="menu"
+      type="button"
+    >
+      <span class="bar1"></span>
+      <span class="bar2"></span>
+      <span class="bar3"></span>
+    </button>
+  </header>
+
+  <nav
+    class="menu-fullscreen"
+    id="menu"
+    aria-label="Menú principal"
+    >
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#reservas">Reservas</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section id="inicio" class="section hero hero-bg">
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <span class="pill">Cafetería & Bar</span>
+        <h1>Un bar<br>para quedarse</h1>
+        <p>Café, tapas y encuentros. Un espacio pensado para disfrutar sin apuro, desde la mañana hasta la noche.</p>
+        <a href="#reservas" class="btn">Reservar mesa</a>
+      </div>
+
+    </section>
+
+    <section class="section section-propuesta">
+
+      <div class="section-header">
+        <span class="pill">Nuestra propuesta</span>
+      </div>
+
+    <div class="propuesta-grid">
+
+      <div class="propuesta-text">
+        <h2>Un bar para quedarse</h2>
+
+        <p>
+          Cafetería Garci nace como un bar de barrio, de esos que no necesitan llamar la atención para hacerse notar. 
+          Un lugar pensado para entrar sin apuro, sentarse cómodo y dejar que el tiempo pase un poco más despacio.
+        </p>
+
+        <p>
+          Por la mañana es café, charla tranquila y mesas compartidas. Al mediodía aparecen las tapas, 
+          el vermut y las conversaciones que se alargan sin darse cuenta.
+        </p>
+
+        <p>
+          Garci es un espacio para encuentros cotidianos, para volver una y otra vez. 
+          Un sitio cercano, reconocible, donde cada visita se siente distinta, pero siempre familiar.
+        </p>
+      </div>
+
+      <div class="propuesta-quote">
+        <blockquote>
+          "Dejar que el tiempo pase un poco más despacio."
+        </blockquote>
+      </div>
+
+    </div>
+
+  </section>
+
+
+    <section id="servicios" class="section section-services">
+      <header class="section-header">
+        <span class="pill">Qué ofrecemos</span>
+        <h2>Servicios</h2>
+        <p>Nuestra propuesta acompaña el ritmo del día. Desde el primer café de la mañana hasta las últimas copas de la noche, cada momento tiene su lugar. Todo está pensado para compartir, quedarse un rato más y disfrutar del bar sin prisas ni formalidades.</p>
+      </header>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <a href="#" class="service-link">
+            <figure class="service-media">
+              <img src="assets/img/servicio-cafe.jpg" alt="Café y desayunos">
+              <figcaption class="service-content">
+                <h3>Café & desayunos</h3>
+                <p>Café de especialidad, bollería y opciones simples para arrancar el día sin apuro.</p>
+              </figcaption>
+            </figure>
+          </a>
+        </article>
+
+        <article class="service-card">
+          <a href="#" class="service-link">
+            <figure class="service-media">
+              <img src="assets/img/servicio-tapas.jpg" alt="Tapas y vermut">
+              <figcaption class="service-content">
+                <h3>Tapas & vermut</h3>
+                <p>Carta pensada para compartir, vermut al mediodía y tardes largas que se estiran.</p>
+              </figcaption>
+            </figure>
+          </a>
+        </article>
+
+        <article class="service-card">
+          <a href="#reservas" class="service-link">
+            <figure class="service-media">
+              <img src="assets/img/servicio-eventos.jpg" alt="Eventos privados">
+              <figcaption class="service-content">
+                <h3>Eventos privados</h3>
+                <p>Cumpleaños, encuentros y celebraciones en un espacio cómodo y cercano.</p>
+              </figcaption>
+            </figure>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section id="reservas" class="section-reservas">
+      <div class="reservas-inner">
+        
+        <div class="reservas-content">
+          <form class="reserva-form" id="form-reservas">
+            
+            <h4 style="margin-bottom: 10px; color: var(--text-main); font-weight: 600;">Reservá tu mesa</h4>
+            <p style="margin-bottom: 20px; font-size: 1.1rem; color: var(--text-muted);">Elegí el momento ideal para visitarnos.</p>
+
+            <div class="form-group">
+                <label for="nombre-reserva">Nombre</label>
+                <input type="text" id="nombre-reserva" name="nombre" placeholder="Tu nombre" required>
+            </div>
+
+            <div class="form-group">
+              <label for="fecha">Fecha</label>
+              <input type="date" id="fecha" name="fecha" required>
+            </div>
+
+            <fieldset class="form-group">
+              <legend>Horario</legend>
+              <input type="hidden" id="hora-input" name="hora" required>
+              
+              <div class="chip-group" role="group" aria-label="Horarios disponibles">
+                <button type="button" class="chip" data-value="12:00">12:00</button>
+                <button type="button" class="chip" data-value="13:30">13:30</button>
+                <button type="button" class="chip" data-value="19:30">19:30</button>
+                <button type="button" class="chip" data-value="21:00">21:00</button>
+              </div>
+            </fieldset>
+
+            <div class="form-group">
+              <label for="personas">Personas</label>
+              <select id="personas" name="personas">
+                <option value="2">2 personas</option>
+                <option value="3">3 personas</option>
+                <option value="4">4 personas</option>
+                <option value="5">5 personas</option>
+                <option value="6">6+ personas</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn" style="width: 100%; background: var(--text-main); color: white; margin-top: 10px;">Confirmar Reserva</button>
+          </form>
+        </div>
+
+        <div class="reservas-text">
+          <h3>Noches <br> de Encuentro</h3>
+          <p>Reservá tu mesa y disfrutá con calma. El ambiente perfecto para desconectar con nuestra selección de vinos y tapas de autor.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="nosotros" class="section section-nosotros">
+      <div class="nosotros-container">
+        
+        <div class="nosotros-text">
+          <h2>Nosotros</h2>
+          <p>Cafetería Garci es un bar de barrio con espíritu cercano, pensado para encuentros cotidianos y momentos especiales.</p>
+        </div>
+        
+        <div class="nosotros-handle">
+          @garcibar
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contacto" class="section section-contacto">
+      <div class="contacto-inner">
+        
+        <div class="contacto-content">
+          <form action="https://formspree.io/f/xjgekjwp" method="POST" class="contacto-form">
+            <h4 style="margin-bottom: 10px; color: var(--text-main); font-weight: 600;">Envianos un mensaje</h4>
+            <p style="margin-bottom: 20px; font-size: 1.1rem; color: var(--text-muted);">Te responderemos en menos de 24 horas.</p>
+
+            <div class="form-group">
+              <label for="nombre-contacto">Nombre</label>
+              <input type="text" name="nombre" id="nombre-contacto" placeholder="Tu nombre completo" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email-contacto">Email</label>
+              <input type="email" name="email" id="email-contacto" placeholder="nombre@email.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje-contacto">Mensaje</label>
+              <textarea name="mensaje" id="mensaje-contacto" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
+            </div>
+
+            <button type="submit" class="btn" style="width: 100%; background: var(--text-main); color: white; margin-top: 10px;">Enviar ahora</button>
+          </form>
+        </div>
+
+        <div class="contacto-text">
+          <h3>Estamos <br> muy cerca</h3>
+          <address>
+            Ven a visitarnos o escribinos por cualquier consulta sobre eventos privados y celebraciones.<br><br>
+            <strong>Lunes a Sábados:</strong> 08:00 — 00:00<br>
+            <strong>Domingos:</strong> 09:00 — 21:00
+          </address>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer-ui">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <span class="logo-ui" style="color: white; font-size: 2rem;">Garci</span>
+        <p>Café de especialidad, tapas de autor y el ambiente perfecto para quedarse.</p>
+      </div>
+
+      <nav class="footer-nav">
+        <h6>Explorar</h6>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#reservas">Reservas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-social">
+        <h6>Síguenos</h6>
+        <div class="social-links">
+          <a href="#" target="_blank">Instagram</a>
+          <a href="#" target="_blank">WhatsApp</a>
+        </div>
+        <small class="copyright">© 2024 Cafetería Garci.</small>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
